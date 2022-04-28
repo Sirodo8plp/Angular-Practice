@@ -1,0 +1,1 @@
+This repository contains all the projects that I have completed while following Angular's tutorials or watching youtube how-to guides.Each project has its own branch, so that the repository can be more organised.
