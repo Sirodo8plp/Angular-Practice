@@ -1,0 +1,23 @@
+<div
+  class="d-flex flex-column flex-sm-row align-items-center justify-content-evenly text-dark p-3"
+>
+  <div class="d-flex flex-column align-items-center">
+    <h3>{{ article.votes }}</h3>
+    <p>Points</p>
+  </div>
+  <a class="mx-0 mx-sm-5 my-3 my-sm-0" href="{{ article.link }}">{{
+    article.title
+  }}</a>
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-success">
+      <a class="link-dark" href (click)="voteUp()">
+        <i>upvote</i>
+      </a>
+    </li>
+    <li class="list-group-item list-group-item-danger">
+      <a class="link-dark" href (click)="voteDown()">
+        <i>downvote</i>
+      </a>
+    </li>
+  </ul>
+</div>
