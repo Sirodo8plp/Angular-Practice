@@ -1,0 +1,7 @@
+<app-product-row
+  *ngFor="let myProduct of productList"
+  [product]="myProduct"
+  (click)="clicked(myProduct)"
+  [class.border-primary]="isSelected(myProduct)"
+  class="d-flex flex-column flex-sm-row align-items-center my-4 justify-content-evenly border-2 border-bottom border-secondary"
+></app-product-row>

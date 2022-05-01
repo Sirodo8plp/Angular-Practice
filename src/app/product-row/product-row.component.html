@@ -1,0 +1,14 @@
+<app-product-image
+  [product]="product"
+  class="image-container"
+></app-product-image>
+
+<div>
+  <h2>{{ product?.name }}</h2>
+
+  <app-product-department
+    [product]="product"
+    class="d-flex"
+  ></app-product-department>
+</div>
+<app-price-display [price]="product?.price"></app-price-display>
