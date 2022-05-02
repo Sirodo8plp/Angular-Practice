@@ -1,0 +1,25 @@
+<h1>ngStyle</h1>
+
+<div [style.background-color]="'yellow'">Fixed yellow background.</div>
+
+<div [ngStyle]="{ color: 'white', 'background-color': 'black' }">
+  Color and background-color properties with [ngStyle]
+</div>
+
+<!-- Dynamic settings -->
+
+<div>
+  <input type="text" name="color" value="{{ color }}" #colorInput />
+</div>
+
+<div>
+  <input type="text" name="fontSize" value="{{ fontSize }}" #fontInput />
+</div>
+
+<button (click)="apply(colorInput.value, fontInput.value)"></button>
+
+<div>
+  <span [ngStyle]="{ color: 'red' }" [style.font-size.px]="fontSize">
+    Red text with font-size: {{ fontSize }}
+  </span>
+</div>

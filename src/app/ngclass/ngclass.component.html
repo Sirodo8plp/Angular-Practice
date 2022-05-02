@@ -1,0 +1,10 @@
+<h1>ngClass</h1>
+
+<div [ngClass]="{ bordered: false }">This is never bordered.</div>
+<div [ngClass]="{ bordered: true }">This is always bordered.</div>
+
+<div [ngClass]="{ bordered: isBordered }">Is this bordered?</div>
+
+<div [ngClass]="classesObj!">Using object var.</div>
+
+<div [ngClass]="classList!">Using array.</div>

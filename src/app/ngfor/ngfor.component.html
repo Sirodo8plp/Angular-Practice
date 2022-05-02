@@ -1,0 +1,20 @@
+<h1>ngFor</h1>
+
+<h4>Simple list of Strings</h4>
+
+<p *ngFor="let c of cities">
+  {{ c }}
+</p>
+
+<h4>List of People</h4>
+
+<p *ngFor="let p of people">{{ p.name }},{{ p.age }},{{ p.city }}</p>
+
+<h4>List of People(using nested ngFor)</h4>
+
+<div *ngFor="let pn of nestedPeople">
+  name: {{ pn.name }}
+  <p *ngFor="let l of pn.locations">
+    {{ l }}
+  </p>
+</div>

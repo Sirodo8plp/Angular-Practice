@@ -1,0 +1,10 @@
+<h1>ngSwitch</h1>
+
+<div [ngSwitch]="a">
+  <div *ngSwitchCase="''">No hello for you.</div>
+  <div *ngSwitchCase="'Hello'">Hello.</div>
+  <div *ngSwitchCase="'World'">World.</div>
+  <div *ngSwitchCase="'Hello World'">Hello World.</div>
+  <div *ngSwitchCase="'Hello World'">Hello World again.</div>
+  <div *ngSwitchDefault="'Hello Sam'">Sam is here.</div>
+</div>
